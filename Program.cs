@@ -20,14 +20,15 @@ namespace HienThiCacLoaiHinh
             Console.Write("Nhap so thu tu hinh ban muon ve: ");
             while(true)
             {
-                if(Int32.TryParse(Console.ReadLine(),out choice))
-                {  
-                    if(choice==1 && choice==2 && choice==3 && choice==4 && choice==5)
-                    break;
+                if(Int32.TryParse(Console.ReadLine(),out choice)&&(choice==1 || choice==2 || choice==3 || choice==4 || choice==5 || choice==6))
+                {                      
                     break;
                 } 
                 else
-                Console.Write("Nhap so thu tu hinh ban muon ve: ");   
+                {
+                    Console.Write("Nhap so thu tu hinh ban muon ve: ");   
+                }
+                
             }  
             switch(choice)
             {
